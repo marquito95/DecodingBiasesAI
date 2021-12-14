@@ -172,7 +172,7 @@ Heaven, W.D. (2020) Predictive policing algorithms are racist. They need to be d
 
 Heaven, W.D. (2021a) Predictive policing is still racist—whatever data it uses, MIT Technology Review. Available at: https://www.technologyreview.com/2021/02/05/1017560/predictive-policing-racist-algorithmic-bias-data-crime-predpol/ (Accessed: 2 December 2021).
 
-Heaven, W.D. (2021b) Training data that is meant to make predictive policing less biased is still racist | MIT Technology Review. Available at: https://www.technologyreview.com/2021/02/05/1017560/predictive-policing-racist-algorithmic-bias-data-crime-predpol/ (Accessed: 2 December 2021).
+Heaven, W.D. (2021b) Training data that is meant to make predictive policing less biased is still racist  MIT Technology Review. Available at: https://www.technologyreview.com/2021/02/05/1017560/predictive-policing-racist-algorithmic-bias-data-crime-predpol/ (Accessed: 2 December 2021).
 
 Heilweil, R. (2020) Why we don’t know as much as we should about police surveillance technology, Vox. Available at: https://www.vox.com/recode/2020/2/5/21120404/police-departments-artificial-intelligence-public-records (Accessed: 2 December 2021).
 
@@ -186,7 +186,7 @@ Mohler, G.O. et al. (2015) ‘Randomized Controlled Field Trials of Predictive P
 
 Rob Paral & Associates. (n.d.). Chicago Community Area Data. https://robparal.com/chicago-data/ 
 
-Ryan-Mosley, T. and Strong, J. (2020) The activist dismantling racist police algorithms | MIT Technology Review, MIT Technology Review. Available at: https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/ (Accessed: 2 December 2021).
+Ryan-Mosley, T. and Strong, J. (2020) The activist dismantling racist police algorithms  MIT Technology Review, MIT Technology Review. Available at: https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/ (Accessed: 2 December 2021).
 
 Saunders, J., Hunt, P. and Hollywood, J.S. (2016) ‘Predictions put into practice: a quasi-experimental evaluation of Chicago’s predictive policing pilot’, Journal of Experimental Criminology, 12(3), pp. 347–371. doi:10.1007/s11292-016-9272-0.
 
