@@ -1,6 +1,6 @@
 # Predictive policing in the City of Chicago
 This is a group project for the "Decoding Biases in AI" class at SciencesPo during Fall 2021. <br/>
-The report can be accessed here: https://marquito95.github.io/DecodingBiasesAI/ <br/>
+The report can be accessed here: https://marquito95.github.io/Predictive-policing-Chicago/ <br/>
 The presentation of the project can be accessed here: https://view.genial.ly/61923d1d797a1e0df42f8278
 
 ## The project
