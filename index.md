@@ -47,26 +47,32 @@ While this methodology is rather approximate due to the limited availability of 
 The algorithm computed the SSL score using eight variables, which are provided in the SSL dataset. For this reason, an OLS regression was performed to understand the approximative relative weights of the eight predictor variables: 
 
 ![SSL algorithm variables multiple regression](https://user-images.githubusercontent.com/92430127/146062277-97adf2a0-2c3d-464a-afcb-4c49702b2136.png)] 
+
 Figure 1: SSL algorithm variables multiple regression
 
 As shown in Figure 1, the younger an individual, the higher his or her SSL score.Whether an individual has been in the past victim of battery, assault or of a shooting are also important predictors in the algorithm. Therefore, age and whether the individual was a victim in the past played an important role in the algorithm. 
 The algorithm resulted in the computation of a mean SSL score of 279.8 out of a scale of 500, where 0 is no risk of being involved in a shooting and 500 is the highest risk. The distribution plot in Figure 2 shows that most individuals score around the average. 
 
 ![Distribution of SSL score in the dataset](https://user-images.githubusercontent.com/92430127/146062818-359a2d5d-3d13-4954-854b-2b5ec159ed04.png)]
+
 Figure 2:Distribution of SSL score in the dataset
 
 After having gained a better understanding of the predictor variables used and the score itself, a focus on ethnic data (which was not used in the computation of the SSL) is taken. The boxplot in Figure 3 indicates that most ethnic groups score similarly in the SSL. It only indicates a slightly lower SSL for Whites and a slightly higher average score for Blacks. These differences seem however marginal. 
 
 ![SSL score based on race](https://user-images.githubusercontent.com/92430127/146062933-b8e0ab69-5935-43f9-9987-31ac637f3d5b.png) 
+
 Figure 3: SSL score based on race
 
 We then compared the number of subjects in the dataset by race. As visible in Figure 4, we found that there are very few Asians, American Indians, and racially Unknown subjects, so we decided to rule these categories from the rest of our analysis and only focus on Black, White, and Hispanic subjects.
 
-<img width="218" alt="Subjects  in the SSL dataset by race" src="https://user-images.githubusercontent.com/92430127/146063017-2d4d0b91-caa4-4f36-b1c6-3dfe1271c9af.png"> Figure 4: SUbjects in the SSL dataset by race
+<img width="218" alt="Subjects  in the SSL dataset by race" src="https://user-images.githubusercontent.com/92430127/146063017-2d4d0b91-caa4-4f36-b1c6-3dfe1271c9af.png"> 
+
+Figure 4: SUbjects in the SSL dataset by race
 
 Furthermore, plotting a scale-adjusted distribution graph with the KDE-Method (Figure 5) shows that the three biggest ethnic groups (Blacks, Whites and Hispanics) have similar distributions. The Hispanic group however, does  indicate a slightly smoother distribution around 215 compared to Blacks and Whites.
 
 ![Distribution (scale-adjusted) of SSL score among races](https://user-images.githubusercontent.com/92430127/146063679-c89adc55-03d0-4e8a-a36d-b1dafa3f97cf.png) 
+
 Figure 5: Distribution (scale-adjusted) of SSL score among races
 
 The descriptive analysis thus did not yield conclusive results regarding a potential racial bias in the SSL. 
@@ -77,11 +83,14 @@ Having observed slight disparity between the scores of the three largest race gr
 Having observed slight disparity between the scores of the three largest race groups (Blacks, Hispanics, Whites), we used statistical analysis to determine whether these differences are significant and should be examined further. 
 Running an OLS regression analysis (Figure 6) revealed that race played a statistically significant role in determining the SSL score of a subject for Blacks (extra 13 points) and Hispanics (extra 14 points). On the contrary, race played no role for the score of Whites, showing a large disparity compared to Blacks and Hispanics. 
 
-<img width="229" alt="OLS regression for SSL scores and race" src="https://user-images.githubusercontent.com/92430127/146064012-f06bc133-0725-480d-960f-e48b1a5e4340.png"> Figure 6: OLS regression for SSL scores and race
+<img width="229" alt="OLS regression for SSL scores and race" src="https://user-images.githubusercontent.com/92430127/146064012-f06bc133-0725-480d-960f-e48b1a5e4340.png"> 
+
+Figure 6: OLS regression for SSL scores and race
 
 We further examined the importance and statistical significance of race in determining the SSL score through various statistical tests. All of them confirmed that the differences between the scores of Blacks, Hispanics, and Whites were statistically significant (example of the Anova test of statistical significance of inter-race differences in Figure 7). 
 
 <img width="296" alt="Testing the significance of the inter-ratial SSL score differences" src="https://user-images.githubusercontent.com/92430127/146064215-a1dd608f-bad6-44eb-a7b9-31627529f725.png"> 
+
 Figure 7: Testing the significance of the inter-ratial SSL score differences
 
 However, despite observing large and statistically significant differences between the SSL scores of different races in the dataset, there was no clear proof of a bias in the algorithm. The results could merely reflect the real-world situation in which Blacks and Hispanics could participate in more shooting crimes than Whites. To determine whether this was indeed the case or whether the algorithm was unfairly biased (i.e., “racist”) in assigning different scores to subjects based on their race, we decided to conduct a thorough in-depth analysis comparing real-world shooting crime data for different races and the risk predicted for them by the algorithm.
@@ -93,7 +102,7 @@ Objective: We aimed to use the findings from the SSL dataset regarding the risk 
 Problem: Nevertheless, although real-world data about shooting crimes in Chicago were publicly available, the racial profile of the perpetrators and the victims were not. It was thus impossible to make the comparison of predicted and real risks.
 Solution: To overcome this limitation, we decided to use a proxy for real-world shooting crime data clustered by race - combining crime data per district with district demographics data. These datasets allowed us to assign each district a majority racial profile and assess its ratio of shooting crimes per 10 thousand inhabitants, combining the results to see the real-world risk of shooting crime for districts based on their racial profiles. Since the SSL dataset could be clustered by district, we could achieve a representative comparison of real and predicted risk of shooting crime for different races.
 
-## Analysis
+### Analysis
 
 To compare the real and predicted risks of shooting crimes, we proceeded in three phases. In the first phase, we created a ranking of districts based on their mean SSL scores Followingly, we merged the real-world crime and demographics datasets and created another ranking, ordering the districts based on shooting crimes per 10 thousand inhabitants (Figure 8)
 
@@ -104,6 +113,7 @@ Figure 8: Rankings of district based on SSL score and criminality per 10k people
 Observing the result, the ranking order predicted by the SSL algorithm was clearly different from the real-world ranking. To understand whether the differences were different for Blacks, Hispanics, and Whites, we introduced the racial aspect into this picture in the second phase. Not having access to racial data for police districts, we mapped demographic data for the smallest available units - community areas - and manually assigned them to the districts they were part of. Computing how many people of each race live in each of the districts, we could determine which race forms the majority of inhabitants in the given district. Districts were found to be heavily segregated with one race constituting above 60% of their inhabitants in all cases apart from district 17. To denote this, we added dummy variables for black majority (9/22 districts),  hispanic majority (5/22 districts), and white majority (8/22 districts) into our merged ranking dataset (Figure 9).
 
 ![District rankings with racial majorities](https://user-images.githubusercontent.com/92430127/146064785-b08573ba-0777-4a30-8268-c81bb6ecd86c.png)
+
 Figure 9: District rankings with racial majorities
 
 ### Results
