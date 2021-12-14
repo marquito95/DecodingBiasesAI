@@ -35,26 +35,7 @@ The algorithm isn’t public but we can find a version of the list (the database
 # Part II: Researching bias in the dataset
 ## Header 2
 ### Header 3
-![Image](src)
+![SSL algorithm variables multiple regression](https://user-images.githubusercontent.com/92430127/146062277-97adf2a0-2c3d-464a-afcb-4c49702b2136.png)](src)
+Figure 1: SSL algorithm variables multiple regression
 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marquito95/DecodingBiasesAI/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
