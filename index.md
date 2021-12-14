@@ -39,3 +39,27 @@ The algorithm isn’t public but we can find a version of the list (the database
 Figure 1: SSL algorithm variables multiple regression
 
 
+## References 
+Akpinar, N.-J., De-Arteaga, M. and Chouldechova, A. (2021) ‘The effect of differential victim crime reporting on predictive policing systems’, in Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. FAccT ’21: 2021 ACM Conference on Fairness, Accountability, and Transparency, Virtual Event Canada: ACM, pp. 838–849. doi:10.1145/3442188.3445877.
+Bachner, J. (2014) ‘Predictive Policing: Preventing Crime with Data and Analytics’, p. 5.
+City of Chicago. (2021). Strategic Subject List - Historical. City of Chicago Data Portal. https://data.cityofchicago.org/Public-Safety/Strategic-Subject-List-Historical/4aki-r3np
+City of Chicago. (2021). Violence Reduction - Victims of Homicides and Non-Fatal Shooting. City of Chicago Data Portal. https://data.cityofchicago.org/Public-Safety/Violence-Reduction-Victims-of-Homicides-and-Non-Fa/gumc-mgzr
+City of Chicago. (2021). Boundaries - Community Areas. City of Chicago Data Portal. https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6
+City of Chicago. (2021). Boundaries - Police Districts. City of Chicago Data Portal. https://data.cityofchicago.org/Public-Safety/Boundaries-Police-Districts-current-/fthy-xz3r
+Díaz, Á. (2021) ‘Data-driven policing’s threat to our constitutional rights’, Brookings, 13 September. Available at: https://www.brookings.edu/techstream/data-driven-policings-threat-to-our-constitutional-rights/ (Accessed: 2 December 2021).
+Ferguson, A.G. (2017) The Police Are Using Computer Algorithms to Tell if You’re a Threat, Time. Available at: https://time.com/4966125/police-departments-algorithms-chicago/ (Accessed: 2 December 2021).
+Haskins, C. (2019) Dozens of Cities Have Secretly Experimented With Predictive Policing Software. Available at: https://www.vice.com/en/article/d3m7jq/dozens-of-cities-have-secretly-experimented-with-predictive-policing-software (Accessed: 2 December 2021).
+Heaven, W.D. (2020) Predictive policing algorithms are racist. They need to be dismantled., MIT Technology Review. Available at: https://www.technologyreview.com/2020/07/17/1005396/predictive-policing-algorithms-racist-dismantled-machine-learning-bias-criminal-justice/ (Accessed: 2 December 2021).
+Heaven, W.D. (2021a) Predictive policing is still racist—whatever data it uses, MIT Technology Review. Available at: https://www.technologyreview.com/2021/02/05/1017560/predictive-policing-racist-algorithmic-bias-data-crime-predpol/ (Accessed: 2 December 2021).
+Heaven, W.D. (2021b) Training data that is meant to make predictive policing less biased is still racist | MIT Technology Review. Available at: https://www.technologyreview.com/2021/02/05/1017560/predictive-policing-racist-algorithmic-bias-data-crime-predpol/ (Accessed: 2 December 2021).
+Heilweil, R. (2020) Why we don’t know as much as we should about police surveillance technology, Vox. Available at: https://www.vox.com/recode/2020/2/5/21120404/police-departments-artificial-intelligence-public-records (Accessed: 2 December 2021).
+Hunt, P., Saunders, J.M. and Hollywood, J.S. (2014) Evaluation of the Shreveport predictive policing experiment. Santa Monica, CA: RAND Corporation.
+Lum, C., Koper, C.S. and Telep, C.W. (2011) ‘The Evidence-Based Policing Matrix’, Journal of Experimental Criminology, 7(1), pp. 3–26. doi:10.1007/s11292-010-9108-2.
+Meijer, A. and Wessels, M. (2019) ‘Predictive Policing: Review of Benefits and Drawbacks’, International Journal of Public Administration, 42(12), pp. 1031–1039. doi:10.1080/01900692.2019.1575664.
+Mohler, G.O. et al. (2015) ‘Randomized Controlled Field Trials of Predictive Policing’, Journal of the American Statistical Association, 110(512), pp. 1399–1411. doi:10.1080/01621459.2015.1077710.
+Rob Paral & Associates. (n.d.). Chicago Community Area Data. https://robparal.com/chicago-data/ 
+Ryan-Mosley, T. and Strong, J. (2020) The activist dismantling racist police algorithms | MIT Technology Review, MIT Technology Review. Available at: https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/ (Accessed: 2 December 2021).
+Saunders, J., Hunt, P. and Hollywood, J.S. (2016) ‘Predictions put into practice: a quasi-experimental evaluation of Chicago’s predictive policing pilot’, Journal of Experimental Criminology, 12(3), pp. 347–371. doi:10.1007/s11292-016-9272-0.
+Tayebi, M.A. and Glässer, U. (2016) Social Network Analysis in Predictive Policing. Cham: Springer International Publishing (Lecture Notes in Social Networks). doi:10.1007/978-3-319-41492-8.
+Uchida, C.D., Ph.D. (2009) ‘A National Discussion on Predictive Policing: Defining Our Terms and Mapping Successful Implementation Strategies’, National Institute of Justice, (NCJ 230404), p. 10.
+
