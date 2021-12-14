@@ -131,12 +131,27 @@ Overall, the findings of our analysis point in the direction of the SSL algorith
 
 These results are of course preliminary and a deeper analysis with full data about the algorithm and the demographics of real-world shooting crime participants is necessary to confirm the said bias. Nevertheless, the implications of our findings are clear, novel, surprising, and statistically significant, and the assumedly discriminative nature of the algorithm is worth being examined. The causes of the bias are outside the scope of this analysis and need to be developed further to provide an explanation for the possible bias. One possible explanation would be to look at age which, as shown in Figure 1, is the most impactful variable in the algorithm (highly positively correlated with the SSL score). We found hispanic population in the SSL dataset to be significantly younger than black or white populations (Figure 11), which could explain why the predicted risk score of Hispanics was significantly overestimated compared to the real-world risk. Nevertheless, this remains a mere hypothesis and a thorough examination of the causes of the bias is needed.
 
-![Age of subjects in the dataset by race](https://user-images.githubusercontent.com/92430127/146065166-69043a40-d324-4f0c-9314-b9672a059958.png) Figure 11: Age of subjects in the dataset by race
+![Age of subjects in the dataset by race](https://user-images.githubusercontent.com/92430127/146065166-69043a40-d324-4f0c-9314-b9672a059958.png)
+
+<Figure 11: Age of subjects in the dataset by race>
 *We had to re-code the age variable as the dataset provided us only with the age decade of the shooting crime participant. 0=0-20, 1=20-30, 2=30-40, 3=40-50...etc. up to 7.  The figure displays the mean age of each race group using this method.
 
-## Conclusion and policy recommendations
+# Conclusion and policy recommendations
+In this analysis, we sought to answer the research question of whether the SSL algorithm for predictive policing employed in Chicago to identify the perpetrators and the victims of shooting incidents shows signs of a racial bias. We hypothesised based on previous controversies with predictive policing employed in other cities and contexts that the algorithm might be suffering from racial discrimination. 
 
-## References 
+The results of our analysis seem to point in a direction confirming this hypothesis. Using and ranking Chicago’s racially segregated districts as proxies for real-world shooting incidents by race we found that the risks of shooting incidents in predominantly Hispanic districts were highly overestimated by the SSL algorithm compared to the real-world data. At the same time, the risk of predominantly Black districts was highly underestimated. Risk of White districts was accurately predicted. We therefore found evidence for negative racial discrimination against Hispanics and positive racial discrimination against Blacks in Chicago. 
+
+However, these results should not be considered as a final proof that the algorithm is racially biased as our research faced significant limits. Lacking access to the algorithm’s code and real-world data about the racial profiles of the perpetrators and victims of shooting incidents, we were forced to make several serious assumptions and approximations potentially skewing the result. The primary objective of the analysis is thus rather to point towards a possible fruitful research direction and serve as the basis for future research examining the racial bias of the SSL algorithm in depth.
+ 
+Nevertheless, some general lessons about predictive policing can be drawn from the analysis. We should engage in a much broader dialogue with and reflection about the link between algorithms and their capacity to understand causality, which is and should probably remain a human feature. As the research has shown, predictive algorithms are not enough to consider preventing risk from reality, and should only serve as a complementary tool for traditional policing practices. Furthermore, considering the fact that such algorithms mostly rely on statistical models and focus on correlations, the insight of social scientists in designing the algorithms is desirable to provide the theoretical basis and to help identify potential biases and unbalance in such systems.  
+
+
+
+
+
+
+
+# References 
 
 Akpinar, N.-J., De-Arteaga, M. and Chouldechova, A. (2021) ‘The effect of differential victim crime reporting on predictive policing systems’, in Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. FAccT ’21: 2021 ACM Conference on Fairness, Accountability, and Transparency, Virtual Event Canada: ACM, pp. 838–849. doi:10.1145/3442188.3445877.
 
