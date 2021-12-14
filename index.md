@@ -48,32 +48,32 @@ The algorithm computed the SSL score using eight variables, which are provided i
 
 ![SSL algorithm variables multiple regression](https://user-images.githubusercontent.com/92430127/146062277-97adf2a0-2c3d-464a-afcb-4c49702b2136.png)] 
 
-Figure 1: SSL algorithm variables multiple regression
+**Figure 1: SSL algorithm variables multiple regression
 
 As shown in Figure 1, the younger an individual, the higher his or her SSL score.Whether an individual has been in the past victim of battery, assault or of a shooting are also important predictors in the algorithm. Therefore, age and whether the individual was a victim in the past played an important role in the algorithm. 
 The algorithm resulted in the computation of a mean SSL score of 279.8 out of a scale of 500, where 0 is no risk of being involved in a shooting and 500 is the highest risk. The distribution plot in Figure 2 shows that most individuals score around the average. 
 
 ![Distribution of SSL score in the dataset](https://user-images.githubusercontent.com/92430127/146062818-359a2d5d-3d13-4954-854b-2b5ec159ed04.png)]
 
-Figure 2:Distribution of SSL score in the dataset
+**Figure 2:Distribution of SSL score in the dataset
 
 After having gained a better understanding of the predictor variables used and the score itself, a focus on ethnic data (which was not used in the computation of the SSL) is taken. The boxplot in Figure 3 indicates that most ethnic groups score similarly in the SSL. It only indicates a slightly lower SSL for Whites and a slightly higher average score for Blacks. These differences seem however marginal. 
 
 ![SSL score based on race](https://user-images.githubusercontent.com/92430127/146062933-b8e0ab69-5935-43f9-9987-31ac637f3d5b.png) 
 
-Figure 3: SSL score based on race
+**Figure 3: SSL score based on race
 
 We then compared the number of subjects in the dataset by race. As visible in Figure 4, we found that there are very few Asians, American Indians, and racially Unknown subjects, so we decided to rule these categories from the rest of our analysis and only focus on Black, White, and Hispanic subjects.
 
 <img width="218" alt="Subjects  in the SSL dataset by race" src="https://user-images.githubusercontent.com/92430127/146063017-2d4d0b91-caa4-4f36-b1c6-3dfe1271c9af.png"> 
 
-Figure 4: SUbjects in the SSL dataset by race
+**Figure 4: SUbjects in the SSL dataset by race
 
 Furthermore, plotting a scale-adjusted distribution graph with the KDE-Method (Figure 5) shows that the three biggest ethnic groups (Blacks, Whites and Hispanics) have similar distributions. The Hispanic group however, does  indicate a slightly smoother distribution around 215 compared to Blacks and Whites.
 
 ![Distribution (scale-adjusted) of SSL score among races](https://user-images.githubusercontent.com/92430127/146063679-c89adc55-03d0-4e8a-a36d-b1dafa3f97cf.png) 
 
-Figure 5: Distribution (scale-adjusted) of SSL score among races
+**Figure 5: Distribution (scale-adjusted) of SSL score among races
 
 The descriptive analysis thus did not yield conclusive results regarding a potential racial bias in the SSL. 
 Having observed slight disparity between the scores of the three largest race groups (Blacks, Hispanics, Whites), we used statistical analysis in the next chapter to determine whether these differences are significant and should be examined further. 
@@ -85,13 +85,13 @@ Running an OLS regression analysis (Figure 6) revealed that race played a statis
 
 <img width="229" alt="OLS regression for SSL scores and race" src="https://user-images.githubusercontent.com/92430127/146064012-f06bc133-0725-480d-960f-e48b1a5e4340.png"> 
 
-Figure 6: OLS regression for SSL scores and race
+**Figure 6: OLS regression for SSL scores and race
 
 We further examined the importance and statistical significance of race in determining the SSL score through various statistical tests. All of them confirmed that the differences between the scores of Blacks, Hispanics, and Whites were statistically significant (example of the Anova test of statistical significance of inter-race differences in Figure 7). 
 
 <img width="296" alt="Testing the significance of the inter-ratial SSL score differences" src="https://user-images.githubusercontent.com/92430127/146064215-a1dd608f-bad6-44eb-a7b9-31627529f725.png"> 
 
-Figure 7: Testing the significance of the inter-ratial SSL score differences
+**Figure 7: Testing the significance of the inter-ratial SSL score differences
 
 However, despite observing large and statistically significant differences between the SSL scores of different races in the dataset, there was no clear proof of a bias in the algorithm. The results could merely reflect the real-world situation in which Blacks and Hispanics could participate in more shooting crimes than Whites. To determine whether this was indeed the case or whether the algorithm was unfairly biased (i.e., “racist”) in assigning different scores to subjects based on their race, we decided to conduct a thorough in-depth analysis comparing real-world shooting crime data for different races and the risk predicted for them by the algorithm.
 
@@ -108,13 +108,13 @@ To compare the real and predicted risks of shooting crimes, we proceeded in thre
 
 ![Rankings of district based on SSL score and criminality per 10k people](https://user-images.githubusercontent.com/92430127/146064619-1c80c9f0-a76c-45b7-9d99-421d4510e4e0.png) 
 
-Figure 8: Rankings of district based on SSL score and criminality per 10k people
+**Figure 8: Rankings of district based on SSL score and criminality per 10k people
 
 Observing the result, the ranking order predicted by the SSL algorithm was clearly different from the real-world ranking. To understand whether the differences were different for Blacks, Hispanics, and Whites, we introduced the racial aspect into this picture in the second phase. Not having access to racial data for police districts, we mapped demographic data for the smallest available units - community areas - and manually assigned them to the districts they were part of. Computing how many people of each race live in each of the districts, we could determine which race forms the majority of inhabitants in the given district. Districts were found to be heavily segregated with one race constituting above 60% of their inhabitants in all cases apart from district 17. To denote this, we added dummy variables for black majority (9/22 districts),  hispanic majority (5/22 districts), and white majority (8/22 districts) into our merged ranking dataset (Figure 9).
 
 ![District rankings with racial majorities](https://user-images.githubusercontent.com/92430127/146064785-b08573ba-0777-4a30-8268-c81bb6ecd86c.png)
 
-Figure 9: District rankings with racial majorities
+**Figure 9: District rankings with racial majorities
 
 ### Results
 
@@ -123,7 +123,7 @@ Finally, in the third phase, we compared the disparities between the predicted a
 Next, we clustered the districts into five categories based on their positions in both SSL and real-world risk rankings to be able to analyze the accuracy of the risk predictions. The first four districts in each ranking were clustered as “extreme” risk, the next four as “high” risk, the next four as “medium” risk, the next four as “low” risk, and the final five as “negligible” risk. We then assessed whether the predicted and real-world risk clusters matched using a confusion matrix (Figure 10). We found that the overall accuracy of the predictions to be fairly low at 36.4% (8/22 districts). For white districts, the accuracy was high and satisfactory, totalling 75% (6/8 districts). However, the accuracy for hispanic districts and black districts was very low, at 20% (1/5) and 11.1% (1/9) respectively. These accuracy results confirmed the previous findings showing the disparities between accurate risk predictions for white districts as opposed to mistaken predictions for hispanic and black districts.
 
 <img width="295" alt="Confusion Matrix for the SSL algorithm" src="https://user-images.githubusercontent.com/92430127/146064916-b073c237-2303-4cf3-be88-8f77313c49b0.png">
-Figure 10: Confusion Matrix for the SSL algorithm
+**Figure 10: Confusion Matrix for the SSL algorithm**
 
 ### Findings and discussion
 
@@ -133,7 +133,8 @@ These results are of course preliminary and a deeper analysis with full data abo
 
 ![Age of subjects in the dataset by race](https://user-images.githubusercontent.com/92430127/146065166-69043a40-d324-4f0c-9314-b9672a059958.png)
 
-<Figure 11: Age of subjects in the dataset by race>
+**Figure 11: Age of subjects in the dataset by race**
+
 *We had to re-code the age variable as the dataset provided us only with the age decade of the shooting crime participant. 0=0-20, 1=20-30, 2=30-40, 3=40-50...etc. up to 7.  The figure displays the mean age of each race group using this method.
 
 # Conclusion and policy recommendations
